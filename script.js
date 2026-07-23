@@ -35,3 +35,37 @@ flexButton.onclick = () => {
     flexMenu.classList.toggle("active");
 
 };
+
+function updateDevice(){
+
+    let now = new Date();
+
+
+    document.getElementById("clock").innerHTML =
+    now.toLocaleTimeString();
+
+
+    document.getElementById("date").innerHTML =
+    now.toLocaleDateString();
+
+
+
+    document.getElementById("network").innerHTML =
+    navigator.onLine ? "Online 🟢" : "Offline 🔴";
+
+
+
+    document.getElementById("screen").innerHTML =
+    screen.width+" x "+screen.height;
+
+
+
+    document.getElementById("browser").innerHTML =
+    navigator.userAgent.split(" ")[0];
+
+}
+
+
+setInterval(updateDevice,1000);
+
+updateDevice();

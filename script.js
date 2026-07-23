@@ -21,3 +21,17 @@ window.onload = () => {
     }, 3000);
 
 };
+
+const flexButton =
+document.querySelector(".flex-btn");
+
+
+const flexMenu =
+document.getElementById("flexMenu");
+
+
+flexButton.onclick = () => {
+
+    flexMenu.classList.toggle("active");
+
+};

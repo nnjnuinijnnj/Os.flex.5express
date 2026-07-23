@@ -140,3 +140,144 @@ body {
     }
 
 }
+
+/* DESKTOP ICONS */
+
+
+.icons {
+
+    position:absolute;
+
+    top:60px;
+    left:50px;
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+
+
+.app {
+
+    width:100px;
+    height:100px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+
+    font-size:35px;
+    color:white;
+
+
+    background:
+    rgba(255,255,255,0.12);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:25px;
+
+
+    border:1px solid rgba(255,255,255,0.25);
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+}
+
+
+
+.app span {
+
+    font-size:14px;
+
+    margin-top:8px;
+
+}
+
+
+
+.app:hover {
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* TASKBAR */
+
+
+.taskbar {
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+
+    width:80%;
+
+    height:70px;
+
+
+    background:
+    rgba(255,255,255,0.15);
+
+
+    backdrop-filter:blur(25px);
+
+
+    border-radius:30px;
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+}
+
+
+
+.flex-btn {
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+
+
+.time {
+
+    color:white;
+
+    font-size:18px;
+
+}

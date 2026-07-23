@@ -69,3 +69,30 @@ function updateDevice(){
 setInterval(updateDevice,1000);
 
 updateDevice();
+
+const browserWindow =
+document.getElementById("browserWindow");
+
+
+const closeBrowser =
+document.getElementById("closeBrowser");
+
+
+const browserIcon =
+document.querySelector(".app:nth-child(2)");
+
+
+
+browserIcon.onclick = () => {
+
+    browserWindow.style.display = "block";
+
+};
+
+
+
+closeBrowser.onclick = () => {
+
+    browserWindow.style.display = "none";
+
+};

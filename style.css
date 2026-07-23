@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:
+    radial-gradient(circle at top left, #4b7cff, transparent 40%),
+    radial-gradient(circle at bottom right, #8b5cff, transparent 40%),
+    #080808;
+}
+
+
+/* BOOT SCREEN */
+
+#boot {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/* FLEX LOGO */
+
+.logo {
+    font-size: 80px;
+    font-weight: 800;
+
+    background: rgba(255,255,255,0.15);
+    padding: 25px 50px;
+
+    border-radius: 35px;
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,0.2);
+
+    animation: glow 2s infinite alternate;
+}
+
+
+.version {
+    margin-top: 20px;
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+
+/* LOADING */
+
+.loading {
+    margin-top: 50px;
+
+    width: 300px;
+    height: 8px;
+
+    background: rgba(255,255,255,0.2);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.bar {
+
+    height: 100%;
+    width: 0%;
+
+    background: white;
+
+    border-radius: 20px;
+
+    animation: load 3s forwards;
+
+}
+
+
+/* DESKTOP */
+
+#desktop {
+
+    display:none;
+
+    width:100%;
+    height:100vh;
+
+    color:white;
+
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111,
+    #283593
+    );
+
+}
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes load {
+
+    from {
+        width:0%;
+    }
+
+    to {
+        width:100%;
+    }
+
+}
+
+
+@keyframes glow {
+
+    from {
+        transform:scale(1);
+    }
+
+    to {
+        transform:scale(1.05);
+    }
+
+}

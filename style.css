@@ -393,3 +393,47 @@ body {
 
 
 }
+
+#deviceCenter {
+
+    position:absolute;
+
+    top:40px;
+    right:40px;
+
+    width:280px;
+
+    padding:25px;
+
+
+    background:
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(25px);
+
+
+    border-radius:30px;
+
+
+    color:white;
+
+}
+
+
+
+#deviceCenter h2 {
+
+    margin-bottom:20px;
+
+}
+
+
+
+.info {
+
+    padding:10px 0;
+
+    font-size:16px;
+
+}
